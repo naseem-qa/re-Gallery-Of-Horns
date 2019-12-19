@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/modules.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="horns-template" type="text/x-handlebars-template">
+    <div id="{{keyword}}">
+        <h2>{{title}}</h2>
+        <img src="{{image_url}}" alt="">
+        <p>{{description}}</p>
+        </div>
+    </script>
+</head>
+
+<body id="foggy">
+    <header>
+        <h1 id="hh"> Gallery of Horns</h1>
+        <span class="select">
+            <select class="filter">
+              <option value="default">Filter by Keyword</option>
+            </select>
+            <select class="sort">
+              <option value="default">Sort by</option>
+              <option value="title">Title</option>
+              <option value="number"># of Horns</option>
+            </select>
+          </span>
+          <br>
+          <span class="pages">
+            <button id="1">page1</button>
+            <button id="2">page2</button>
+          </span>
+    </header>
+    <main>
+
+        <section id="photo-template">
+        </section>
+    </main>
+    <footer> &copy; 2018 Code Fellows</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
