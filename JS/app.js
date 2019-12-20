@@ -32,6 +32,18 @@ function showSelectBox() {
       }
   
     });
+
+    // function populateSelectBox() {
+    //   let seen = {};
+    //   let select = $('.filter');// we put this var to save our search in it to not doing that 20times evry time.jq is alibrary and there jop is to find element so to do the searching one time and put it in the var 
+    //   $(select).empty();
+    //   Horns.all.forEach(horn => {
+    //     if (!seen[horn.keyword]) {
+    //       let option = `<option value = "${horn.keyword}">${horn.keyword}</option>`;
+    //       select.append(option);
+    //       seen[horn.keyword] = true;
+    
+    //     }
   
   }
   function showSortBox() {
